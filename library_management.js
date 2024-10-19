@@ -14,11 +14,18 @@ class Book {
     }
 
     get isAvailable(){
-        if (this._isAvailable === true)
-            return this._isAvailable
+        if (this._isAvailable === this._isAvailable)
+            return true
         else 
-        console.log(`Is borrowed`)
+            return false 
 }
+        set isAvailable(NewBook){
+            if (this._isAvailable === this._isAvailable)
+            return this._isAvailable
+            else
+            false 
+        }
+    }
 
-
-}
+const B1 = newBook ("HP", "JK", 7, true)
+console.log(B1.title)
