@@ -75,3 +75,21 @@ returnBook(Book){
   console.log (`Book has been returned`)
 
 }}}
+
+
+//Task 4
+
+class VIPPatron extends Patron {
+    constructor(name){
+        super(name)
+        this.priority = true 
+}
+borrowBook(book, priority = true){
+    if (!book.isAvailable && priority)
+        console.log(`Unavailable`) 
+else if (!book.isAvailable) {
+    console.log(`Unavailable`)
+}
+else 
+console.log(`Book is open to be borrowed`)
+}}
