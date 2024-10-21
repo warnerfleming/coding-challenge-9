@@ -27,5 +27,24 @@ class Book {
         }
     }
 
-const B1 = newBook ("HP", "JK", 7, true)
-console.log(B1.title)
+
+    class Section {
+
+        constructor(name,book){
+        this.name = name 
+        this.books = []
+    }
+
+    addBook(books){
+        this.books.push(book)
+
+    }
+
+    getAvailable(books){
+        return this.books.filter ( book => book.isAvailable).length
+    }
+
+    listBooks(){
+        return this.books
+    }
+}
