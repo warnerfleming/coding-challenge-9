@@ -98,3 +98,25 @@ else
 console.log(`Book is open to be borrowed`)
 }}
 
+
+
+//Task 6 
+
+const fantasy = new Section("Fantasy")
+const Nonfiction = new Section("Nonfiction")
+
+const book1 = new Book ("Harry Potter", "JK", "54")
+const book2 = new Book ("Superhuman", "IDK", "43")
+
+fantasy.addBook(book1)
+Nonfiction.addBook(book2)
+
+fantasy.listBooks()
+
+const patron1 = new patron ("Jeff Smith")
+const VIP = new VIPPatron ("Larry Greg")
+
+patron1.borrowBook ("Jeff Smith")
+VIP.borrowBook ("Larry Greg")
+
+VIP.returnBook(book2)
