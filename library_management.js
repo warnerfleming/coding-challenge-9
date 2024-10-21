@@ -48,6 +48,10 @@ class Book {
     listBooks(){
         return this.books
     }
+//Task 5
+    calculateTotalBooksAvailable(){ 
+        return this.books.filter(book => book.isAvailable).length
+    }
 }
 
 
@@ -93,3 +97,4 @@ else if (!book.isAvailable) {
 else 
 console.log(`Book is open to be borrowed`)
 }}
+
